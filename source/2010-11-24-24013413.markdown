@@ -21,16 +21,16 @@ keywords:
 [Compiling OpenKinect on a stubborn OSX 10.6.5 (Updated 21/Nov)](http://www.spoofscript.com/blog/?p=327 "Compiling OpenKinect on a stubborn OSX 10.6.5 (Updated 21/Nov)")
 
 まずキネクトドライバをインストールする前に、cmakeとgitをインストールする。
-[code]
+```sh
 $ wget http://www.cmake.org/files/v2.8/cmake-2.8.3-Darwin-universal.dmg
 $ wget http://git-osx-installer.googlecode.com/files/git-1.7.3.2-intel-leopard.dmg
-[/code]
+```
 
 この２つを解凍してインストールする。
 終わったら次にコマンドラインでキネクトドライバをインストールする。
 
 OpenKinect と LibUSB をダウンロード。
-[code]
+```sh
 $ git clone https://github.com/OpenKinect/libfreenect.git
 Cloning into libfreenect...
 remote: Counting objects: 712, done.
@@ -46,20 +46,20 @@ remote: Compressing objects: 100% (769/769), done.
 remote: Total 1659 (delta 1178), reused 1251 (delta 888)
 Receiving objects: 100% (1659/1659), 494.63 KiB | 117 KiB/s, done.
 Resolving deltas: 100% (1178/1178), done.
-[/code]
+```
 
 OpenKinect に LibUSBパッチをあててインストールする。
-[code]
+```sh
 $ cd libusb
 $ ./autogen.sh
 $ patch -p1 < ../libfreenect/platform/osx/libusb-osx-kinect.diff
 $ ./configure
 $ make
 $ sudo make install
-[/code]
+```
 
 cmake でmakefileをつくる。
-[code]
+```sh
 $ cd ../libfreenect/cmake_modules/
 $ cmake ..
 -- The C compiler identification is GNU
@@ -91,11 +91,11 @@ $ cmake ..
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/funnymac/tmp/libfreenect/cmake_modules
-[/code]
+```
 
 
 makeし、make install する。
-[code]
+```sh
 $ make
 Scanning dependencies of target freenect
 [ 11%] Building C object src/CMakeFiles/freenect.dir/core.c.o
@@ -130,7 +130,7 @@ Install the project...
 -- Installing: /usr/local/include/libfreenect/libfreenect.h
 -- Installing: /usr/local/include/libfreenect/libfreenect.hpp
 -- Installing: /usr/local/bin/glview
-[/code]
+```
 
 次に、openFrameworks用の ofxKinect をダウンロードし、適当な箇所で解凍する。
 [https://github.com/ofTheo/ofxKinect](https://github.com/ofTheo/ofxKinect "https://github.com/ofTheo/ofxKinect")

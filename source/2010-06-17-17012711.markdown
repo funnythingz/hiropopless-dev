@@ -13,19 +13,19 @@ keywords:
 ---
 スパムメールが増えたのかなんなのか、ウチのサーバのログが暴れだしたので、ちょこっと調べてみることにした。
 
-[code]
+```sh
 host spamc[9130]: connect to spamd on 127.0.0.1 failed, retrying (#1 of 3): Connection refused
 host spamc[9130]: connect to spamd on 127.0.0.1 failed, retrying (#2 of 3): Connection refused
 host spamc[9130]: connect to spamd on 127.0.0.1 failed, retrying (#3 of 3): Connection refused
-[/code]
+```
 
 このようなログがけっこう前からあった。どうも Spamassassin が動いていないようだ。
 リブートしてみようと思い下記のコマンドを実行
 
-[code]
+```sh
 [root@host]~# /etc/init.d/spamassassin start
 spamd を起動中: child process [14793] exited or timed out without signaling production of a PID file: exit 255 at /usr/bin/spamd line 2588.
-[/code]
+```
 
 なんだか調べていったら下記のページにたどり着いた。
 [http://www.komine.biz/modules/d3forum/index.php?topic_id=34](http://www.komine.biz/modules/d3forum/index.php?topic_id=34 "http://www.komine.biz/modules/d3forum/index.php?topic_id=34")
@@ -40,11 +40,11 @@ Hope this works also for others!
 </blockquote>
 
 と書いてあるので、下記コマンドを実行後、改めてSpamassassin を起動してみた。
-[code]
+```sh
 [root@host]~# sa-update
 [root@host]~# /etc/rc.d/init.d/spamassassin start
 spamd を起動中:                                            [  OK  ]
-[/code]
+```
 
 おぉ、無事に起動した！あとはこれで様子見である。
 

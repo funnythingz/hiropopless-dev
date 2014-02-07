@@ -24,53 +24,53 @@ MacPortsは、MacPorts自身を含めたファイルをすべて/opt/local以下
 
 zshは.zsh_profile、bashは.bash_profile に下記を追記する。
 環境によっては.zshrc、.bashrcだったりする。
-[code]
+```sh
 % vi .zsh_profile
 export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
 export MANPATH=/opt/local/man:$MANPATH
 
 % source .zsh_profile
-[/code]
+```
 
 ### MacPortsをアップデートする。
 基本的にMacPortsは /opt/local 以下にインストールされるので、sudoを使って実行する。
-[code]
+```sh
 % sudo port -d selfupdate
 % sudo port -d sync
-[/code]
+```
 
 ### Pythonをインストールする。
 GAEはPython2.5を使用するため、2.5をまるっとMacPortsでインストールする。
-[code]
+```sh
 % sudo port install python25
 % sudo port install py25-hashlib
 % sudo port install py25-socket-ssl
 % sudo port install py25-pil
-[/code]
+```
 
 pythonのパスを確認する。
-[code]
+```sh
 % which python
 /usr/bin/python
 
 % python
 Python 2.6
-[/code]
+```
 
 Python2.6やPython2.7ではGAEは動かないので、MacPortsでインストールしたPython2.5にシンボリックリンクを張る。
-[code]
+```sh
 % sudo mv /usr/bin/python /usr/bin/python_bk
 % sudo ln -s /opt/local/bin/python2.5 /usr/bin/python
-[/code]
+```
 
 再度Pythonのパスを確認する。
-[code]
+```sh
 % ls -l /usr/bin/python
 lrwxr-xr-x  1 root  wheel  24  9 16 10:44 /usr/bin/python -> /opt/local/bin/python2.5
 
 % python
 Python 2.5.6
-[/code]
+```
 
 Google App Engine をインストールする。
 GAEのアカウント登録をすませてから下記からMac用のSDKをダウンロードする。

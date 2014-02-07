@@ -11,7 +11,7 @@ keywords:
 ---
 環境：FedoraCore6
 
-[code]
+```sh
 #vi /etc/httpd/conf/httpd.conf
 
 #Options Indexes FollowSymLinks
@@ -24,15 +24,15 @@ AddOutputFilter INCLUDES .shtml
 ↓変更後
 AddType text/html .shtml .html .htm
 AddOutputFilter INCLUDES .shtml .html .htm
-[/code]
+```
 
 SSIテスト動作用スクリプト
-[html]
+```html
 今日は
 <!--#config timefmt="%a, %b %d, %Y" -->
 <!--#echo var="DATE_LOCAL" -->
 です。
-[/html]
+```
 
 ---
 ※この記事は WordPress に投稿した記事を変換したものです。一部不自然な表示があるかも知れません。ご了承ください。また、記事タイトル先頭の * は WordPress から移行した記事である印です。

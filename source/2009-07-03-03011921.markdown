@@ -20,9 +20,9 @@ HTTP_Requestクラスを使うには、下記のコマンドを実行する。
 
 
 
-[code]
+```sh
 [root@host]# pear install HTTP_Request
-[/code]
+```
 
 これで晴れてHTTP_Requestが使いまくりである。
 リファレンスはまた後日。

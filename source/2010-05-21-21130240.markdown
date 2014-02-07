@@ -11,12 +11,12 @@ keywords:
 - Linux
 - zsh
 ---
-[code]
+```sh
 zsh
 autoload -U tetris
 zle -N tetris
 bindkey '^T' tetris
-[/code]
+```
 
 Control-T を押せばゲーム開始。zsh最強！
 しかもちょっとキー操作が難しい。

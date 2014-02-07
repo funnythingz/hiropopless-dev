@@ -11,9 +11,9 @@ keywords:
 ---
 たまにサイトの耐久テストをやったりするので、2ちゃんねるで有名な田代砲的な（ＤＯＳアタック）ものをブックマークレット用につくってみました。
 
-[javascript]
+```js
 javascript:(function(){ setInterval(function(){var dd = new Date(); console.log( dd.getUTCHours() + ":" + dd.getUTCMinutes() + ":" + dd.getUTCSeconds() ); location.reload()}, 5000) })();
-[/javascript]
+```
 
 これをブックマークレットに登録して使うと、無限リロードしまくります。
 （※良い子は悪用しちゃダメだよ！）

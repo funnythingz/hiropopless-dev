@@ -22,7 +22,7 @@ keywords:
 
 
 まずRubyをインストール
-[code]
+```sh
 $ sudo su -
 # yum install ruby
 Installed:
@@ -32,7 +32,7 @@ Dependency Installed:
   ruby-libs.x86_64 0:1.8.5-5.el5_4.8
 
 Complete!
-[/code]
+```
 
 
 
@@ -41,7 +41,7 @@ Complete!
 ただし、Ruby1.8.5だと、Gemsは1.3.5でないとインストールできない。1.3.6以降を使いたい場合は、Ruby1.8.6以上をインストールする。
 
 
-[code]
+```sh
 # wget http://rubyforge.org/frs/download.php/60718/rubygems-1.3.5.tgz
 # tar xvfz rubygems-1.3.5.tgz
 # cd rubygems-1.3.5
@@ -57,11 +57,11 @@ RubyGems 1.3.5 installed
         from ./lib/rubygems/command_manager.rb:102:in `run'
         from ./lib/rubygems/gem_runner.rb:58:in `run'
         from setup.rb:35
-[/code]
+```
 
 
 rdocがないって言われたので、rdocをインストールして、再びGemsインストールを実行
-[code]
+```sh
 # yum install rdoc
 Installed:
   ruby-rdoc.x86_64 0:1.8.5-5.el5_4.8
@@ -92,18 +92,18 @@ Deprecation Notices:
 
 RubyGems installed the following executables:
         /usr/bin/gem
-[/code]
+```
 
 
 これでRubyとRubyGemsのインストールができた。
 
 
 次にRuby on Rails をインストールする。
-[code]
+```sh
 # gem install rails
 ERROR:  Error installing rails:
         activesupport requires Ruby version >= 1.8.7
-[/code]
+```
 
 
 Ruby1.8.7 以上いれろって怒られた。
@@ -112,18 +112,18 @@ Ruby1.8.7 以上いれろって怒られた。
 
 仕方がないので、Ruby1.8.7をインストールする。
 最新版のソースを落としてビルドする。
-[code]
+```sh
 # wget ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p249.tar.bz2
 # tar jvxf ruby-1.8.7-p249.tar.bz2
 # cd ruby-1.8.7-p249
 # ./configure
 # make && make install
 # make clean
-[/code]
+```
 
 
 Ruby1.8.7がインストールできたので、Ruby1.8.5を削除する。
-[code]
+```sh
 # yum remove ruby
 Removed:
   ruby.x86_64 0:1.8.5-5.el5_4.8
@@ -132,46 +132,46 @@ Dependency Removed:
   ruby-irb.x86_64 0:1.8.5-5.el5_4.8            ruby-rdoc.x86_64 0:1.8.5-5.el5_4.8
 
 Complete!
-[/code]
+```
 
 
 Rubyのバージョンを確認する。
-[code]
+```sh
 # ruby -v
 ruby 1.8.7 (2010-01-10 patchlevel 249) [x86_64-linux]
-[/code]
+```
 
 
 gemsも最新版をインストールする。
 [最新版URLはこちらで確認](http://rubyforge.org/frs/?group_id=126 "最新版URLはこちらで確認")
 
 
-[code]
+```sh
 # wget http://rubyforge.org/frs/download.php/70696/rubygems-1.3.7.tgz
 # tar xvfz rubygems-1.3.7.tgz
 # cd rubygems-1.3.7
 # ruby setup.rb
 # gem -v
 1.3.7
-[/code]
+```
 
 
 これで、Ruby1.8.7、RubyGems1.3.7がインストールできた。
 と思いきや、リストを参照したらエラーがでた。
-[code]
+```sh
 # gem list
 ERROR:  Loading command: list (LoadError)
     no such file to load -- zlib
 ERROR:  While executing gem ... (NameError)
     uninitialized constant Gem::Commands::ListCommand
-[/code]
+```
 
 
 zlibないって言われた。でもzlib入ってるし。
 ググったら同じ問題にぶつかった人がいたので[こちらを参考](http://fujiiyuuki.blogspot.com/2010/03/centosrails.html "こちらを参考")にzlib-devel入れて再コンパイルしてみた。そしたらすんなり通りやがりましたよ。
 
 
-[code]
+```sh
 # cd
 # yum install zlib-devel
 Installed:
@@ -191,11 +191,11 @@ creating Makefile
 # gem list
 
 *** LOCAL GEMS ***
-[/code]
+```
 
 
 でーけたー！これでやっとRailsをインストールできるはず。
-[code]
+```sh
 # gem install rails
 Successfully installed activesupport-3.0.1
 Successfully installed builder-2.1.2
@@ -251,27 +251,27 @@ Installing ri documentation for railties-3.0.1...
 Installing ri documentation for bundler-1.0.3...
 Installing ri documentation for rails-3.0.1...
 File not found: lib
-[/code]
+```
 
 
 なんか途中エラーでた。なんじゃこりゃ。
 とりあえず確認してみる。
-[code]
+```sh
 # rails -v
 Rails 3.0.1
-[/code]
+```
 
 
 Rails3.x系になってから、createコマンドがRails2系と違うみたいで、下記ではcreateできなかった。
-[code]
+```sh
 $ rails testapp
 Usage:
   rails new APP_PATH [options]
-[/code]
+```
 
 
 ので、Rails3.0にのっとってcreateしてみる。
-[code]
+```sh
 $ rails new testapp
       create
       create  README
@@ -349,21 +349,21 @@ $ rails new testapp
       create  tmp/pids
       create  vendor/plugins
       create  vendor/plugins/.gitkeep
-[/code]
+```
 
 
 testappを動かしてみる
-[code]
+```sh
 $ cd testapp/
 $ rails server
 Could not find gem 'sqlite3-ruby (>= 0, runtime)' in any of the gem sources.
 Try running `bundle install`.
-[/code]
+```
 
 
 "sqlite3-ruby" が入ってないとのこと。
 "sqlite3-ruby" を入れる。
-[code]
+```sh
 $ cd testapp/
 $ vi Gemfile
 gem 'sqlite3-ruby', :require => 'sqlite3'
@@ -386,30 +386,30 @@ details.  You may need configuration options.
 
 Gem files will remain installed in /usr/local/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.3.2 for inspection.
 Results logged to /usr/local/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.3.2/ext/sqlite3/gem_make.out
-[/code]
+```
 
 "sqlite3-ruby only supports sqlite3 versions 3.6.16+, please upgrade!" って新しいのいれろってことかしら。
 
 
 sqlite3のバージョン確認
-[code]
+```sh
 $ rpm -q sqlite
 sqlite-3.3.6-5
-[/code]
+```
 
 
 古い。そういえばsqlite-develも入っていなかったので、インストールする。
-[code]
+```sh
 # yum install sqlite-devel
 Installed:
   sqlite-devel.i386 0:3.3.6-5                sqlite-devel.x86_64 0:3.3.6-5
 
 Complete!
-[/code]
+```
 
 
 sqlite3をソースからインストールする。
-[code]
+```sh
 $ cd /usr/local/src
 $ sudo wget http://www.sqlite.org/sqlite-amalgamation-3.7.3.tar.gz
 $ sudo tar xvzf sqlite-3.7.3.tar.gz 
@@ -417,13 +417,13 @@ $ cd sqlite-3.7.3
 $ sudo ./configure
 $ sudo make
 $ sudo make install
-[/code]
+```
 
 
 
 
 再びsqlite3-ruby をインストール
-[code]
+```sh
 $ sudo gem install sqlite3-ruby
 Building native extensions.  This could take a while...
 Successfully installed sqlite3-ruby-1.3.2
@@ -438,11 +438,11 @@ Installing RDoc documentation for sqlite3-ruby-1.3.2...
 No definition for libversion
 
 Enclosing class/module 'mSqlite3' for class Statement not known
-[/code]
+```
 
 
 sqlite3-ruby を確認
-[code]
+```sh
 $ gem list
 
 
@@ -475,18 +475,18 @@ sqlite3-ruby (1.3.2)
 thor (0.14.4)
 treetop (1.4.8)
 tzinfo (0.3.23)
-[/code]
+```
 
 
 はいったー！
 railsサーバーを立ち上げてみる。
-[code]
+```sh
 $ cd
 $ cd dev/rails/testapp/
 $ rails server
 => Booting WEBrick
 => Rails 3.0.1 application starting in development on http://0.0.0.0:3000
-[/code]
+```
 
 
 http://localhost:3000/ にアクセス。

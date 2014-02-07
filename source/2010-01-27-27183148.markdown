@@ -14,10 +14,10 @@ keywords:
 美人時計の画像を収集する際に、時間で画像名が吐き出されているので、その吐き出しの計算式をおこしてみた。
 画像収集バッチはRubyなんですが、今回ちょっとJavaScriptを使う機会があったので、JavaScriptで起こしてみました。
 
-[html]
+```html
 <div id="debug"></div>
-[/html]
-[javascript]
+```
+```js
 (function(){
   var getid = function(id){
     return document.getElementById(id);
@@ -47,7 +47,7 @@ keywords:
     }
   }
 })();
-[/javascript]
+```
 
 0000.jpg
 0001.jpg

@@ -11,7 +11,7 @@ keywords:
 - Ajax
 - JavaScript
 ---
-[javascript]
+```js
 //
 window.onload = function(){
 	var conf = {
@@ -20,7 +20,7 @@ window.onload = function(){
 	};
 	var imgNodeList = getElementsByClassName(conf.className);
 	var node;
-	for (var i=0, len=imgNodeList.length; i<len>
+	for (var i=0, len=imgNodeList.length; i++) {
 		node = imgNodeList[i];
 		node.originalSrc = node.src;
 		node.rolloverSrc = node.originalSrc.replace(/(.gif|.jpg|.png)/,
@@ -54,7 +54,7 @@ function preloadImage(url) {
 	p[l] = new Image();
 	p[l].src = url;
 }
-[/javascript]
+```
 
 ---
 ※この記事は WordPress に投稿した記事を変換したものです。一部不自然な表示があるかも知れません。ご了承ください。また、記事タイトル先頭の * は WordPress から移行した記事である印です。

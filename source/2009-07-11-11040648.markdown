@@ -14,7 +14,7 @@ keywords:
 
 JavaScriptはプロトタイプベースなので、クラスという概念はありませんが、クラスっぽいものを定義してインスタンスを生成するっぽいことができます。
 
-[javascript]
+```js
 /**
 *	Class Ahyaとコンストラクタ
 */
@@ -28,7 +28,7 @@ Ahya.prototype.init = function(){
 }
 var ahya = new Ahya('moe');	// 'moe'がアラート表示
 alert( ahya.init() );	// 'moe'がアラート表示
-[/javascript]
+```
 
 
 まぁこんな感じ。

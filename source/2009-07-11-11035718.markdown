@@ -15,49 +15,49 @@ JavaScriptって本当に柔軟な言語で、いろんな書き方できるか�
 今回は関数（function）についてちょっと書いてみます。
 
 ▼基本的なfunctionの書き方
-[javascript]
+```js
 function ahya(arg){
 	return arg
 }
 ahya('moe');	//戻り値 'moe'
-[/javascript]
+```
 
 
 これが一般的なスタンダードなやつですね。
 
 他にもこんな書き方ができます。
 
-[javascript]
+```js
 var ahya = function(arg){
 	return arg;
 }
 ahya('moe');
-[/javascript]
+```
 
 
 あと、関数名を使わない無名関数（匿名関数）という書き方もできます。
-[javascript]
+```js
 (function(arg){
 	return arg;
 })('moe');
-[/javascript]
+```
 
 
 さらに、JavaScriptはオブジェクト指向言語なので、コンストラクタも使えます。
 下記は無名コンストラクタです。
 
-[javascript]
+```js
 new function(arg){
 	return arg
 }('moe');
-[/javascript]
+```
 
 
 どれも返ってくる戻り値は同じですが、関数とコンストラクタでは決定的な違いがあります。
 それは、thisが示すオブジェクトが違うということです。
 
 ▼詳しくはこちら
-[[JavaScript](function() {})()とnew function() {}の違い](http://liosk.blog103.fc2.com/blog-entry-32.html "[JavaScript](function() {})()とnew function() {}の違い")
+[```js(function() {})()とnew function() {}の違い](http://liosk.blog103.fc2.com/blog-entry-32.html "```js(function() {})()とnew function() {}の違い")
 
 といったように、JavaScriptはとても柔軟な言語なので、好みや状況に合わせていろんな書き方ができるということです。
 

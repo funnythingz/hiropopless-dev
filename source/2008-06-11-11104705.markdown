@@ -10,29 +10,29 @@ keywords:
 - CSS
 ---
 firefox
-[css]
+```css
 div {}
-[/css]
+```
 
 opera
-[css]
+```css
 html:first-child div {}
-[/css]
+```
 
 safari
-[css]
+```css
 html* div {}
-[/css]
+```
 
 Ie6
-[css]
+```css
 *html div {}
-[/css]
+```
 
 Ie7
-[css]
+```css
 *+html div {}
-[/css]
+```
 
 ※全部個別に指定してあげないとズレるかもしれない。
 

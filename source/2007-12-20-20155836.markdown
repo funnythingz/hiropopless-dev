@@ -18,11 +18,11 @@ keywords:
 **text-indent: -9999px を使ったテクニック**
 
 
-[html]
+```html
 <div>[テキスト</span>](# "テキスト</span>")</div>
-[/html]
+```
 
-[css]
+```css
 div a {
 	display: block;
 	width: 45px;
@@ -33,17 +33,17 @@ div a {
 div a:hover {
 	background: url(images/bg_on.gif) no-repeat 0 0;
 }
-[/css]
+```
 
 しかし、これでは、キーボードでのタブ移動の際に選択がわかりにくくなって、アクセシビリティ的によくないとのことから、display: none; を使った画像置換テクニックもあります。
 
 **display: none; を使った画像置換テクニック**
 
-[html]
+```html
 <div>[テキスト</span>](# "テキスト</span>")</div>
-[/html]
+```
 
-[css]
+```css
 div a {
 	display: block;
 	width: 45px;
@@ -56,7 +56,7 @@ div a:hover {
 div span {
 	display: none; /*テキストを表示させない。*/
 }
-[/css]
+```
 
 ---
 ※この記事は WordPress に投稿した記事を変換したものです。一部不自然な表示があるかも知れません。ご了承ください。また、記事タイトル先頭の * は WordPress から移行した記事である印です。

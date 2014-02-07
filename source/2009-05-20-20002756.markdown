@@ -22,68 +22,68 @@ keywords:
 
 まず、下記コマンドを打ってみる。
 
-[code]
+```sh
 [root@host ~]# mount -t ntfs /dev/sdb1 /mnt/sdb1
 mount: マウントポイント /mnt/sdb1 が存在しません
-[/code]
+```
 
 
 そこで、マウントポイントを作成して、マウントを再試行する。
 
-[code]
+```sh
 [root@host ~]# mkdir /mnt/o
 [root@host ~]# mount /dev/sdb1 /mnt/o/
 mount: unknown filesystem type 'ntfs'
-[/code]
+```
 
 
 'ntfs'なんぞ知らんとのこと。
 調べてみたら、'mount -t ntfs-3g' というコマンドでマウントするらしい。
 そこで、ntfs-3gをインストールする。
 
-[code]
+```sh
 [root@host ~]# yum install ntfs-3g
-[/code]
+```
 
 
 インストールが終わったところ、再マウント。
 
-[code]
+```sh
 [root@host ~]# mount -t ntfs-3g /dev/sdb1 /mnt/o
 FATAL: Module fuse not found.
 ntfs-3g-mount: fuse device is missing, try 'modprobe fuse' as root
-[/code]
+```
 
 
 'modprobe fuse'を試せとのことで、試してみる。
 
-[code]
+```sh
 [root@host ~]# modprobe fuse
 FATAL: Module fuse not found.
-[/code]
+```
 
 
 'not found' って・・・。
 さらに調べると、'dkms-fuse'ってのをインストールしなくてはならないよう。
 
-[code]
+```sh
 [root@host ~]# yum --enablerepo=rpmforge install dkms-fuse
-[/code]
+```
 
 そして、'modprobe fuse' を実行して、マウントに再挑戦
 
-[code]
+```sh
 [root@host ~]# modprobe fuse
 [root@host ~]# mount -t ntfs-3g /dev/sdb1 /mnt/o/
-[/code]
+```
 
 
 エラーが返ってこないので成功か？確認してみる。
 
-[code]
+```sh
 [root@host ~]# ls /mnt/o/
 System Volume Information  evangelion  music
-[/code]
+```
 
 
 マウントに成功！'evangelion' ってナニ？とか聞かないのっ。

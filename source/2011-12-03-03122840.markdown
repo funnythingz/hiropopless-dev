@@ -16,7 +16,7 @@ keywords:
 言語はいつものJavaScript。
 あと最近（今さら）覚えたクロージャーを使って書いてみました。
 
-[javascript]
+```js
 var rtn = "";
 var fizzBuzz = function(fizz, buzz, max){
     return function(){
@@ -45,7 +45,7 @@ while(n < 20){
     n++;
 }
 console.log(rtn);
-[/javascript]
+```
 
 実際やってみたもの
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/funnythingz/682W3/15/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>

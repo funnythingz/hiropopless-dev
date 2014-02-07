@@ -12,7 +12,7 @@ keywords:
 いまさらながらPHPのインストールでしくじることがあったのでメモ。
 
 まずPHPをインストールする。
-[code]
+```sh
 # wget http://jp.php.net/get/php-5.3.8.tar.gz/from/us.php.net/mirror
 # tar xvfz php-5.3.8.tar.gz
 # ./configure --enable-mbstring --with-apxs2 --with-mysql --with-gd --with-zlib --with-jpeg-dir --with-tsm-pthreads --enable-maintainer-zts --cache-file=../config.cache
@@ -25,10 +25,10 @@ keywords:
 PHP 5.3.8 (cli) (built: Oct 27 2011 11:47:09)
 Copyright (c) 1997-2011 The PHP Group
 Zend Engine v2.3.0, Copyright (c) 1998-2011 Zend Technologies
-[/code]
+```
 
 apacheとの連携
-[code]
+```sh
 # vi /etc/httpd/conf/httpd.conf
 LoadModule php5_module        /usr/lib/httpd/modules/libphp5.so
 DirectoryIndex index.html index.html.var index.php
@@ -36,7 +36,7 @@ AddType application/x-httpd-php .php
 
 # /etc/rc.d/init.d/httpd configtest
 # /etc/rc.d/init.d/httpd restart
-[/code]
+```
 
 正常にphpinfo()できればおｋ。
 
@@ -45,15 +45,15 @@ AddType application/x-httpd-php .php
 さくらVPSが64bit版だったっぽくちょっと悩みました。
 
 オプションに "--with-libdir=lib64" を追加してください。
-[code]
+```sh
 ./configure --enable-mbstring --with-apxs2 --with-mysql --with-gd --with-zlib --with-libdir=lib64 --with-pear --with-gd --enable-maintainer-zts --cache-file=../config.cache
-[/code]
+```
 
 ### 【追記2】
 Curlを使う場合。
-[code]
+```sh
 ./configure --enable-mbstring --with-apxs2 --with-mysql --with-gd --with-zlib --with-libdir=lib64 --with-pear --with-gd --with-curl --enable-sockets --enable-maintainer-zts --cache-file=../config.cache
-[/code]
+```
 
 ---
 ※この記事は WordPress に投稿した記事を変換したものです。一部不自然な表示があるかも知れません。ご了承ください。また、記事タイトル先頭の * は WordPress から移行した記事である印です。

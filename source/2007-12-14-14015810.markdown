@@ -13,7 +13,7 @@ keywords:
 ---
 [元記事はこちら](http://allabout.co.jp/internet/javascript/closeup/CU20050515A/ "元記事はこちら")
 
-[javascript]
+```js
 //XMLHttpRequestオブジェクト生成
 function createHttpRequest(){//Win ie用
 	if(window.ActiveXObject){
@@ -68,13 +68,13 @@ function on_loaded(oj){
 	//ダイアログで表示
 	alert(res);
 }
-[/javascript]
+```
 
-[html]
+```html
 <form>
 <input type="button" value="test.txtをリクエストした時のレスポンス”" onclick="requestFile( '', 'GET', './test.txt', true )"/>
 </form>
-[/html]
+```
 
 最初の関数、createHttpRequest()は、ブラウザ別にXMLHttpRequestオブジェクトを生成して返します。Win版IE 用にエラー回避しつつ新旧2種類のMSXML[1]’を試し、その他の実装ブラウザではnew XMLHttpRequest()[1]で生成します。もし、失敗すればnullを返します。
 

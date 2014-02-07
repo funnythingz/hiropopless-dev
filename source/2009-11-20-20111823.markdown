@@ -32,7 +32,7 @@ Rubyはすでにインストール済み。
 
 ▽美人時計の全画像取得スクリプト
 bijin.ruby
-[ruby]
+```ruby
 require 'net/http'
 require 'uri'
 
@@ -58,12 +58,12 @@ error_files = ""
       end
    end
 end
-[/ruby]
+```
 
 ▽コマンドから実行
-[code]
+```sh
 [ooiwa@eva bijin_tokei]$ ruby bijin.ruby
-[/code]
+```
 
 おぉー！画像がどんどん落ちてきたよー！これは感動！とりあえず動作確認はOKと。
 
@@ -77,7 +77,7 @@ end
 今回はわかりやすいようにスクリプトを起動した日の日付を取得して"yyyymmdd"形式で文字列を返す関数と、ディレクトリを生成する関数を用意します。
 
 ▽今日の日付をyyyymmdd型の文字列に変換する関数
-[ruby]
+```ruby
 def getTimeNow()
     day = Time.now
     putMonth = day.month.to_s
@@ -95,10 +95,10 @@ def getTimeNow()
     nowTime = day.year.to_s + putMonth + putDay
     return nowTime
 end
-[/ruby]
+```
 
 ▽ディレクトリの生成
-[ruby]
+```ruby
 def mkdir(path)
     if Dir::mkdir( path, 0777 )
         return true
@@ -106,14 +106,14 @@ def mkdir(path)
         return false
     end
 end
-[/ruby]
+```
 
 
 あとは、Yamashiro0217さんのスクリプトにディレクトリパスを突っ込んで、一通り完成させる。今回Cronでバッチ処理させるため、ディレクトリパスは絶対パスで書く。
 
 ▽スクリプトをまとめたのがこれ
 bijin.ruby
-[ruby]
+```ruby
 #——————————————————————————————
 #  美人時計の画像を全取得するスクリプト
 #
@@ -207,29 +207,29 @@ def init()
 	end
 end
 init()
-[/ruby]
+```
 
 Rubyは変数の定義がグローバルとローカルでスコープがわかりやすいから良いですね！なんかPHPより全然カンタンだし、オブジェクト指向言語だし、個人的にはだいぶ気に入りました。
 
 完成したスクリプトを早速実行してみます。
 
-[code]
+```sh
 [ooiwa@eva bijin_tokei]$ ruby /home/ooiwa/tmp_ruby/bijin_tokei/bijin.ruby
 [ooiwa@eva bijin_tokei]$ ls
 20091120  bijin.ruby
 [ooiwa@eva bijin_tokei]$ ls 20091120/
 0000.jpg 0001.jpg 0002.jpg
-[/code]
+```
 
 うまく動いていれば、本日の日付ディレクトリが生成され、そのディレクトリの中に画像をどんどんたまっていっているのがわかります。
 
 最後はこの完成したスクリプトをCronでまわす処理をします。
 
-[code]
+```sh
 [ooiwa@eva bijin_tokei]$ crontab -e
 #毎日10:00に bijin.ruby スクリプトを実行
 0 10 * * * ruby /home/ooiwa/tmp_ruby/bijin_tokei/bijin.ruby
-[/code]
+```
 
 あとは毎日10時になるとCronがRubyスクリプトを実行してくれます。
 これであとは目視で比較するか、md5で比較するツールでもつくって差分を分けるスクリプトを足すかでもすればどの女の子が削除されて追加されたかがわかりますね。

@@ -22,7 +22,7 @@ keywords:
 前々回くらいで自分のユーザー情報を取得するスクリプトはつくってみました。
 今回は、マイミク一覧とアプリ使用者をフィルタリングして、アプリを使ってるマイミクのみを取得するというテストをつくってみました。
 
-[javascript]
+```js
 (function(){
 
 	/******************************************************************************************************
@@ -86,21 +86,21 @@ keywords:
 	gadgets.util.registerOnLoadHandler( init );
 
 })();
-[/javascript]
+```
 
 デフォルトで表示される件数は20件までなようです。
 さらに表示したい場合は、
-[javascript]
+```js
 params[ opensocial.DataRequest.PeopleRequestFields.MAX ] = 50;
-[/javascript]
+```
 をつかって、件数を取得するようです。
 なんか、lengthやgetMyMixiLength()みたいなのないのかなぁ。
 
 さらに、条件から一致した全体の数から、n件目から取得みたいなこともできる。
-[javascript]
+```js
 params[ opensocial.DataRequest.PeopleRequestFields.MAX ] = 50;
 params[ opensocial.DataRequest.PeopleRequestFields.FIRST ] = 30;
-[/javascript]
+```
 
 上の例だと、「50件中、30件目から取得」みたいなことができる。
 公式のリファレンスまぁまぁわかりやすいんだけど、もっと細かいリファレンス欲しいなぁ。

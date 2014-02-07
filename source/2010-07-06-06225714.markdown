@@ -17,23 +17,23 @@ MySQLしか使ったことないのですが、案件でPostgresqlを使うこ�
 クライアント認証につまづいてなかなか壁を突破できませんでしたがググって頑張りましたよっと。
 
 まず、yumで必要なモジュールをインストール。
-[code]
+```sh
 [root@localhost ~]# yum install -y postgresql-tcl postgresql-server postgresql-contrib postgresql php-pgsql
-[/code]
+```
 
 今回はPHPとの連動を行うので、下記もインストール
-[code]
+```sh
 [root@localhost ~]# yum install -y php-pgsql
-[/code]
+```
 
 ひととおりインストールが終わったらpostgresqlを起動。
-[code]
+```sh
 [root@localhost ~]# /etc/rc.d/init.d/postgresql start
-[/code]
+```
 
 それでは初期設定を行っていく。
 MySQLと違って、postgresというユーザーでログインしないと設定が行えない。
-[code]
+```sh
 [root@localhost ~]# su - postgres
 -bash-3.2$ psql -l
         List of databases
@@ -43,11 +43,11 @@ MySQLと違って、postgresというユーザーでログインしないと設�
  template0 | postgres | UTF8
  template1 | postgres | UTF8
 (3 rows)
-[/code]
+```
 
 ユーザー名"test"、パスワード"test" のユーザーを作成する。
 権限はデータベースの作成を可能にする。
-[code]
+```sh
 -bash-3.2$ psql
 Welcome to psql 8.1.21, the PostgreSQL interactive terminal.
 
@@ -64,12 +64,12 @@ postgres=# \q
 logout
 
 [root@localhost ~]#
-[/code]
+```
 
 これで、Linux上のユーザー"test"からPostgresqlを操作できるようになる。
 そしたら、"test"ユーザーが使えるデータベース"test"を作成する。
 文字コードは"EUC_JP"にする。
-[code]
+```sh
 [root@localhost ~]# su - test
 [test@localhost ~]# createdb test -E EUC_JP
 CREATE DATABASE
@@ -83,23 +83,23 @@ CREATE DATABASE
  template1 | postgres | UTF8
 (4 rows)
 [test@localhost ~]$
-[/code]
+```
 
 ちなみにただ単に "creatdb test" とした場合、文字コードはデフォルトで"utf-8"になる。
 データベースを削除する場合は、"drop データベース名" とすれば良い。
 
 最後に、PHPなどと連携する場合は、クライアント認証ファイルを編集する必要がある。
-[code]
+```sh
 [root@localhost ~]# vi /var/lib/pgsql/data/pg_hba.conf
 #local  all         all                               ident sameuser  #コメントアウト
 local   all         all                               trust
 
 #host   all         all         127.0.0.1/32          ident sameuser  #コメントアウト
 host    all         all         127.0.0.1/32          password
-[/code]
+```
 
 postgresqlとapacheを再起動する。
-[code]
+```sh
 [root@localhost ~]# /etc/rc.d/init.d/postgresql restart
 Stopping postgresql service:                               [  OK  ]
 Starting postgresql service:                               [  OK  ]
@@ -107,7 +107,7 @@ Starting postgresql service:                               [  OK  ]
 [root@localhost ~]# /etc/rc.d/init.d/httpd restart
 Stopping httpd:                                            [  OK  ]
 Starting httpd:                                            [  OK  ]
-[/code]
+```
 
 phpファイルを書いて、接続テストする。
 [php]
@@ -133,10 +133,10 @@ else{
 [/php]
 
 特に問題なく接続できたら下記のように表示される。
-[code]
+```sh
 接続しちゃいました
 接続を閉じました。
-[/code]
+```
 
 
 クライアント認証んとこは本当にわかんなくてつまづいたけど、ちゃんと繋がると感動ですね！

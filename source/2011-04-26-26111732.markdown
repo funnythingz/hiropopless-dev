@@ -16,9 +16,9 @@ JavaScriptを拡張するのはあまり気が進まないのですが、ネイ�
 今回は超絶によく使うArrayオブジェクト(配列)の拡張を書いておきます。
 
 まずは配列のシャッフル。
-[javascript]
+```js
 Array.shuffle()
-[/javascript]
+```
 
 見たまんまです。このまま使います。ネイティブ実装にはないのでprototypeを使って拡張します。
 アルゴリズムはシャッフル最速(？)と言われているFisher–Yatesアルゴリズムを使います。
@@ -26,7 +26,7 @@ Array.shuffle()
 [Fisher–Yatesアルゴリズムについて](http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle "Fisher–Yatesアルゴリズムについて")
 
 JavaScriptの実装は下記の通り
-[javascript]
+```js
 Array.prototype.shuffle = function() {
 	var i = this.length;
 	while(i){
@@ -37,30 +37,30 @@ Array.prototype.shuffle = function() {
 	}
 	return this;
 }
-[/javascript]
+```
 
 これで簡単に配列の中身をシャッフルできます。
 
 次に配列のコピー(クローン)をつくるためのメソッド。
-[javascript]
+```js
 Array.clone()
-[/javascript]
+```
 
 JavaScriptの配列は別変数に代入した場合、それはコピーになるのではなく単純に元の配列オブジェクトを参照するだけになるので、コピーをつくりたい場合はいちいちループ文の中でpushしたりしなきゃならんのでめんどくさいのです。
 それを一発で解決する方法が、Array.clone() をつくっちゃえば簡単だよねってことなのです。
 
 実装はこちら
-[javascript]
+```js
 Array.prototype.clone = function(){
 	return Array.apply(null,this);
 }
-[/javascript]
+```
 
 これだけです。とてもシンプル。
 
 
 Array.shuffle() と Array.clone() を両方の使い方はこちら。
-[javascript]
+```js
 //配列hogeを生成
 var hoge = Array(1,2,3,4,5);
 //hogeのクローンfooを生成
@@ -70,7 +70,7 @@ foo.shuffle();
 
 console.log( hoge )     // [1,2,3,4,5]
 console.log( foo )       // [2,4,1,3,5]
-[/javascript]
+```
 
 この2つとても便利ちゃんなのです。
 JavaScriptはどんどん拡張しちゃえば良いと思います。

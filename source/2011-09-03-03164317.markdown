@@ -15,7 +15,7 @@ MacOSX SnowLeopardちゃん、Curlちゃんは入ってるんだけど、wgetち
 
 GNUからwgetの最新版をダウンロードします。
 [wget最新版はこちらからチェック](ftp://ftp.gnu.org/pub/gnu/wget/ "wget最新版はこちらからチェック")
-[code]
+```sh
 $ sudo su -
 # curl -O ftp://ftp.gnu.org/pub/gnu/wget/wget-1.9.1.tar.gz
 # tar xvfz wget-1.9.1.tar.gz
@@ -23,7 +23,7 @@ $ sudo su -
 # ./configure
 # make
 # make install
-[/code]
+```
 
 これでwgetちゃんが使えるようになりました！
 

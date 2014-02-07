@@ -129,9 +129,9 @@ init();
 [/php]
 
 これで、あとはコマンドラインにて、この test_host.php を実行
-[code]
+```sh
 [user@host ~]$ php test_host.php
-[/code]
+```
 
 で、あとは勝手にアップロードしてくれる。
 PEAR、凄いよ、PEAR。

@@ -50,7 +50,7 @@ ubuntuでも良いし、ＵＳＢブートできるFedoraでも良いし、Ｏ�
 
 まずはUSBメモリを分割します。
 fdiskを使って分割していきましょう。
-[code]
+```sh
 root@ubuntu-vm:~# fdisk /dev/sdb
 Command (m for help): p
 
@@ -60,12 +60,12 @@ Units = cylinders of 160 * 512 = 81920 bytes
 Disk identifier: 0x9fe248cd
 
    Device Boot      Start         End      Blocks   Id  System
-[/code]
+```
 まず、fdiskのpコマンドで、USBメモリ内にパーティションがないことを確認。
 通常は、パーティションが何かしらあると思うので、dコマンドでパーティションを削除しておくこと。
 
 では、パーティションがないという前提ですすめていく。
-[code]
+```sh
 Command (m for help): n
 Command action
    e   extended
@@ -75,11 +75,11 @@ Partition number (1-4): 1
 First cylinder (1-48947, default 1):
 Using default value 1
 Last cylinder or +size or +sizeM or +sizeK (1-48947, default 48947): 24473
-[/code]
+```
 fdiskのnコマンドでプライマリパーティションを切っていく。
 まず一つ目。シリンダーサイズが48947となっているので、半分（24473）のところでパーティションをぶち切る。
 そして、ファーストパーティションはwindows形式（FAT32）にする。
-[code]
+```sh
 Command (m for help): t
 Selected partition 1
 Hex code (type L to list codes): b
@@ -94,11 +94,11 @@ Disk identifier: 0x9fe248cd
 
    Device Boot      Start         End      Blocks   Id  System
 /dev/sdb1               1       24473     1957824    b  W95 FAT32
-[/code]
+```
 tコマンドで、b を選ぶとファイルシステムがwindows形式（FAT32）になった。
 
 同じ要領でセカンドパーティションを作っていく。
-[code]
+```sh
 Command (m for help): n
 Command action
    e   extended
@@ -124,7 +124,7 @@ Disk identifier: 0x9fe248cd
    Device Boot      Start         End      Blocks   Id  System
 /dev/sdb1               1       24473     1957824    b  W95 FAT32
 /dev/sdb2           24474       48947     1957920   83  Linux
-[/code]
+```
 セカンドパーティションはファイルシステムをLinuxにした。
 セカンドパーティションは設定データなどを保存するためのディスクになる。
 
@@ -132,12 +132,12 @@ Disk identifier: 0x9fe248cd
 fdiskを抜けたら、ふたつのパーティションをフォーマットする。
 
 もしマウントされていたら、umountコマンドでアンマウントしておくこと。
-[code]
+```sh
 root@ubuntu-vm:~# mkfs.vfat /dev/sdb1
 root@ubuntu-vm:~# mkfs.ext2 /dev/sdb2
-[/code]
+```
 次に、データ保存用の"changes"フォルダをつくる。
-[code]
+```sh
 root@ubuntu-vm:~# mount /dev/sdb2 /media/disk
 root@ubuntu-vm:~# cd /media/disk/
 root@ubuntu-vm:/media/disk# ls
@@ -145,7 +145,7 @@ lost+found
 root@ubuntu-vm:/media/disk# mkdir changes
 root@ubuntu-vm:/media/disk# ls
 changes  lost+found
-[/code]
+```
 上記例では、/media/disk にUSBメモリのセカンドパーティションをマウントして、
 mkdir で "changes"フォルダを作っている。
 
@@ -192,7 +192,7 @@ USBメモリ内にある、"/boot/syslinux" フォルダ内の"syslinux.cfg" を
 ちなみに下記は僕がすでにカスタマイズしたあとです。
 ポイントは"changes=/dev/sdb2" ←こいつ。
 セカンドパーティションが設定やらのデータ保存領域になります。
-[code]
+```sh
 #backtrack3 グラフィックモード
 LABEL pchanges
 MENU LABEL BackTrack3
@@ -210,15 +210,15 @@ LABEL oph
 MENU LABEL Ophcrack
 KERNEL /boot/oph/vmlinuz
 APPEND initrd=/boot/oph/initrd.gz ramdisk_size=6666 root=/dev/ram0 rw autoexec=xconf;startx changes=/slax/
-[/code]
+```
 これですべての準備は整いましたね。
 最後に、下記のファイルを実行して、USBブートを可能にする。
-[code]
+```sh
 ＃USBメモリ内の、下記ファイルを実行。※必ずUSBメモリ内で実行してください！
 ＃windowsのローカル上で実行するとwindowsがぶっこわれる可能性が。
 
 /boot/bootinst.bat
-[/code]
+```
 これで完成です。長かったですね・・・。
 あとは、USBメモリをブートすれば、藤丸仕様っぽいUSBメモリが完成です。
 パスワードクラックでも、侵入テストでも何でもテキトーにやってみてください。

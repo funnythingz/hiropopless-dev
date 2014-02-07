@@ -15,34 +15,34 @@ keywords:
 ---
 まずは、fedora-release と fedora-release-notes をアップデートする。
 
-[code]
+```sh
 [root@host ~]# rpm -Uvh \
 http://download.fedora.redhat.com/pub/fedora/linux/releases/10/Fedora/i386/os/Packages/fedora-release-10-1.noarch.rpm \
 http://download.fedora.redhat.com/pub/fedora/linux/releases/10/Fedora/i386/os/Packages/fedora-release-notes-10.0.0-1.noarch.rpm
-[/code]
+```
 
 
 次に、rpm と yum を先にアップデート
 
-[code]
+```sh
 [root@host ~]# yum update rpm\* yum\*
-[/code]
+```
 
 
 次に、clean と upgrade を行う
 
-[code]
+```sh
 [root@host ~]# yum clean all
 [root@host ~]# yum upgrade
-[/code]
+```
 
 
 パッケージのダウンロード終了後、トランザクションテストスタート
 
-[code]
+```sh
 Is this ok [y/N]: y
 Running Transaction Test
-[/code]
+```
 
 
 特にエラーが出なければ、リブートして完了。

@@ -14,7 +14,7 @@ keywords:
 あれから自分でも var_dump関数 をつくってみました。
 
 
-[javascript]
+```js
 var_dump(document);
 
 //var_dump
@@ -25,7 +25,7 @@ function var_dump($obj) {
 	}
 	alert( $objList );
 }
-[/javascript]
+```
 
 windowとかやったら多分PC落ちるんじゃないかと・・・。
 

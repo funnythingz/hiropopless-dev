@@ -15,14 +15,14 @@ Rsync便利です。よく使うのでここにメモっときます。
 [http://www.aconus.com/~oyaji/backup/rsync.htm](http://www.aconus.com/~oyaji/backup/rsync.htm "http://www.aconus.com/~oyaji/backup/rsync.htm")
 
 SSHでの基本的な使い方（詳細は省きます。）
-[code]
+```sh
 rsync オプション [ホスト名:]コピー元ファイル/ディレクトリ名 [ホスト名:]コピー先ファイル/ディレクトリ名
-[/code]
+```
 
 いつもこんな感じでつかってる。
-[code]
+```sh
 rsync -avz -e ssh /home/hoge/public_html/ backup@backup.hostname.com:/home/hoge/public_html/
-[/code]
+```
 
 Rsync、かわいいよ、Rsync。
 

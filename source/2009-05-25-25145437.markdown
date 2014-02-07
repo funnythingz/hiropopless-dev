@@ -11,7 +11,7 @@ keywords:
 ---
 [ロケットスタート](http://rocketstart.jp "ロケットスタート")のページで面白いスクリプトを見つけた。
 
-[javascript]
+```js
 var timer = setInterval(function(){
 	var i = document.getElementById(&quot;count&quot;).childNodes[0].nodeValue  * 1;
 	i-- ;
@@ -28,7 +28,7 @@ var timer = setInterval(function(){
 		document.getElementById(&quot;count&quot;).innerHTML = i;
 	}
 } , 1000);
-[/javascript]
+```
 
 「メールアドレス表示まで、あと・・秒」という文字がある。
 10秒経過するとJSで生成されたメールアドレスがめでたく登場する。

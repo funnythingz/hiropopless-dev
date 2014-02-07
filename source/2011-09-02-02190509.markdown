@@ -54,7 +54,7 @@ Titanium はiPhone, Android でクロスデバイス開発をするための開�
 <a href="http://hiropo.co.uk/wp-content/uploads/2011/09/3ca357de7e930f7da506a4b426695a86.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/09/3ca357de7e930f7da506a4b426695a86.png" alt="" title="source" width="240" height="213" class="alignnone size-full wp-image-701" /></a>
 
 ### ソースコードを書く
-[html]
+```html
 <!Doctype html>
 <html lang="ja">
 	<head>
@@ -81,7 +81,7 @@ Titanium はiPhone, Android でクロスデバイス開発をするための開�
 		</script>
 	</body>
 </html>
-[/html]
+```
 
 ### アプリを実行してみる
 <a href="http://hiropo.co.uk/wp-content/uploads/2011/09/23951a9f864ad6d1ade13d6f72a46dea.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/09/23951a9f864ad6d1ade13d6f72a46dea.png" alt="" title="実行" width="331" height="173" class="alignnone size-full wp-image-706" /></a>

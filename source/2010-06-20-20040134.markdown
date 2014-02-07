@@ -15,9 +15,9 @@ keywords:
 ---
 iPhone SDK4.0 GM版が何かと曲者で不便なので、3.2に戻す。今インストールされているXcodeをアンインストールする。
 
-[code]
+```sh
 $ sudo /Developer/Library/uninstall-devtools --mode=all
-[/code]
+```
 
 その後、iPhone SDK3.2をインストールすれば元通り！
 

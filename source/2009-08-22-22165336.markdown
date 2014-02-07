@@ -18,7 +18,7 @@ OSはCenｔOS、Fedora系は全般的にやり方は同じ。
 
 proftpdを直接起動するのではなく、xinetd経由での起動にする。
 
-[code]
+```sh
 [root@host ~]# rpm -q proftpd
 パッケージ proftpd はインストールされていません。
 [root@host ~]# yum install proftpd
@@ -44,7 +44,7 @@ DefaultRoot                     ~/public_html !wheel
 disable                 = no
 
 [root@host ~]# /etc/rc.d/init.d/xinetd start
-[/code]
+```
 
 xinetd経由でないと起動できないようにしたので、万が一、proftpdを単体起動しようとしても、エラーが出て起動できず。
 あとはFTPクライアントソフト（NextFTPやFFFTPなど）を使ってFTP接続できてるなら成功である。

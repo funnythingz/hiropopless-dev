@@ -18,9 +18,9 @@ utf-8でエンコードされてるものを使う場合、htmlがShift_JISやeu
 
 
 
-[html]
+```html
 <script type="text/javascript" src="xxxxxxx.js" charset="utf-8" /></script>
-[/html]
+```
 
 
 

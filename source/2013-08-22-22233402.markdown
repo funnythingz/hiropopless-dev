@@ -29,7 +29,7 @@ Grunt便利です！
 ## Sass/Compassをインストール
 Rubyが入っている前提ですすめていきます。
 
-[code lang="shell"]
+```sh
 % gem install sass
 % gem install compass
 
@@ -44,7 +44,7 @@ sass (3.2.9)
 
 % which compass
 /usr/bin/compass
-[/code]
+```
 
 こんな感じでインストール完了。
 
@@ -55,20 +55,20 @@ sass (3.2.9)
 [http://nodejs.org/](http://nodejs.org/ "http://nodejs.org/")
 
 インストールできるとこんな感じになる。
-[code lang="shell"]
+```sh
 % which node
 /usr/local/bin/node
 
 % node -v
 v0.10.17
-[/code]
+```
 
 
 ## TypeScriptをインストール
 
 nodeがインストールできたらTypeScriptをインストールする。
 
-[code lang="shell"]
+```sh
 % sudo npm install -g typescript
 
 % which tsc
@@ -76,15 +76,15 @@ nodeがインストールできたらTypeScriptをインストールする。
 
 % tsc -v
 Version 0.9.0.1
-[/code]
+```
 
 
 ## grunt-cliをインストール
 
 次にgrunt-cliをインストールします。
-[code lang="shell"]
+```sh
 % sudo npm install -g grunt-cli
-[/code]
+```
 
 
 ## typeSCを使う準備
@@ -92,11 +92,11 @@ Version 0.9.0.1
 githubのリポジトリからgit cloneします。
 cloneしたらgrunt関連のファイルをインストールします。
 
-[code lang="shell"]
+```sh
 % git clone https://github.com/funnythingz/typeSC.git
 % cd typeSC
 % npm install
-[/code]
+```
 
 エラーが出なければインストール完了です。
 
@@ -104,17 +104,17 @@ cloneしたらgrunt関連のファイルをインストールします。
 ## typeSCを使ってみる
 
 typeSCのデフォルト設定では、各ソースファイルは下記のように管理します。
-[code]
+```sh
 .ts ... src/**/*.ts
 .scss ... src/sass/**/*.scss
-[/code]
+```
 
 コンパイル後は公開ディレクトリに下記のように書きだされます。
 複数のtsファイルはコンパイル後、typesc.jsというひとつのJSファイルになります。さらに圧縮されたtypesc.min.jsも同時に書きだされます。
-[code]
+```sh
 .js ... public/typesc.js, public/typesc.min.js
 .css ... public/css/typesc.css
-[/code]
+```
 
 それではソースを書いてみます。
 とりあえずSassはこんな感じで適当に。
@@ -157,7 +157,7 @@ typeSCのデフォルト設定ではsrcディレクトリにある複数のtsフ
 
 それではコンパイルしてみましょう。
 
-[code lang="shell"]
+```sh
 % grunt
 
 Running &quot;typescript:base&quot; (typescript) task
@@ -180,18 +180,18 @@ directory public/css/
 Compilation took 0.117s
 
 Done, without errors.
-[/code]
+```
 
 こんな感じでコンパイルできたら成功です！
 コンパイルされたファイルはこんな感じであると思います。
-[code lang="shell"]
+```sh
 public
 ├── css
 │   └── typesc.css
 ├── index.html
 ├── typesc.js
 └── typesc.min.js
-[/code]
+```
 
 こんな感じでSass/CompassもTypeScriptも面倒なコンパイルから開放されるのでさくさくと開発に集中できます。Gruntいいね！
 

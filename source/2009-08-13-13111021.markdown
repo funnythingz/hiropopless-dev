@@ -18,11 +18,11 @@ text-indent: -9999em; や、spanでテキスト囲ってを visibility: hidden; 
 #画像は200px×80pxで、上にロールオーバー前の画像、
 #下にロールーオーバー後の画像を上下にくっつける形で用意する。
 
-[html]
+```html
 <div id="replace_img">[バナーボタン<span></span>](#dummy "バナーボタン<span></span>")</div>
-[/html]
+```
 
-[css]
+```css
 /*
 *    haribote
 */
@@ -52,7 +52,7 @@ text-indent: -9999em; や、spanでテキスト囲ってを visibility: hidden; 
 #replace_img a:hover span {
     background-position: 0 -40px;
 }
-[/css]
+```
 
 
 

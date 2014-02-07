@@ -12,31 +12,31 @@ keywords:
 プログラムを組んでいるとき、名前をつけるのがめんどくさいと思うことが多々多々ある。
 そんなときはどうしているのかというと、大抵、
 
-[javascript]
+```js
 var a = 'string';
 function b(){
    return a;
 }
-[/javascript]
+```
 
 といった具合に適当につける。
 
 ひどい場合は、
 
-[javascript]
+```js
 var ahya = function(){
    return;
 }
-[/javascript]
+```
 
 とか、
 
-[javascript]
+```js
 var moe = 'ahyao';
 var ooiwa = function(){
    return moe;
 }
-[/javascript]
+```
 
 など、人名使ったり、宇宙語使ったり…。
 
@@ -44,16 +44,16 @@ var ooiwa = function(){
 
 まずは、無名関数でグローバル領域を汚さないようにする
 
-[javascript]
+```js
 //無名関数
 (function(){
    //ここにソース
 })();
-[/javascript]
+```
 
 そして、いきなり実行する無名コンストラクタを実装する
 
-[javascript]
+```js
 //無名関数
 (function(){
    //無名コンストラクタ
@@ -61,12 +61,12 @@ var ooiwa = function(){
       //ここにソース
    }
 })();
-[/javascript]
+```
 
 コンストラクタ内で呼び出したい関数があれば、
 無名関数の中に実装する。
 
-[javascript]
+```js
 //無名関数
 (function(){
    //無名コンストラクタ
@@ -84,13 +84,13 @@ var ooiwa = function(){
       return arg;
    }
 })();
-[/javascript]
+```
 
 引数に関しても、名前をつけるのがめんどくさい時がある。
 さらに、引数の数も決まってない上に、増える可能性がある場合は、
 引数を配列として取得するなり、オブジェクトにしてしまうなり方法は色々ある。
 
-[javascript]
+```js
 new function(arg){
    var name = arg.name;
    var age = arg.age;
@@ -100,7 +100,7 @@ new function(arg){
    age: 25,
    bloodType: 'RH-AB'
 });
-[/javascript]
+```
 
 
 というようにも書ける。

@@ -24,10 +24,10 @@ keywords:
 
 aaa@localhost にくるメールを aaa@localhost と、bbb@etc.com に転送する。
 
-[code]
+```sh
 #vi /etc/aliases
 aaa: aaa,bbb@etc.com
-[/code]
+```
 
 これだけでOKなのです。
 aliasesって便利！

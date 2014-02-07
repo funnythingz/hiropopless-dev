@@ -14,7 +14,7 @@ keywords:
 フルFlashのサイトに対して、HTMLフッターをつけたいという要望があったので、つけてみることにした。
 Flashの埋め込み方は、swfobject.js(versionは1.5)を使って埋めてみた。
 
-[html]
+```html
 <div id="content"><!-- ここにFlashがロードされます --></div>
 <script type="text/javascript" src="js/swfobject.js"></script>
 <script type="text/javascript">
@@ -26,7 +26,7 @@ so.write('content');
 
 // ]]>
 </script>
-[/html]
+```
 
 
 これでFlashがフルサイズで読み込まれる。
@@ -40,7 +40,7 @@ Flashを表示するエレメントの親要素に、全体レイアウトを設
 フッターは、常にウィンドウ下部に固定することにする。
 
 
-[html]
+```html
 <div id="wrapper">
 <div id="content"><!-- ここにFlashがロードされます --></div>
 </div>
@@ -83,7 +83,7 @@ so.write('content');
 
 // ]]>
 </script>
-[/html]
+```
 
 
 これでHTML要素のフッターを下部に維持しつつ、フルFlashを実現できる。

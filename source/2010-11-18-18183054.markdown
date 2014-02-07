@@ -15,7 +15,7 @@ keywords:
 ---
 そういえばpassenger をインストールしてなかったので、インストールする。
 
-[code]
+```sh
 # gem install passenger
 # passenger-install-apache2-module
 
@@ -35,11 +35,11 @@ Checking for required software...
  * Apache Portable Runtime (APR) development headers... not found
  * Apache Portable Runtime Utility (APU) development headers... not found
 
-[/code]
+```
 
 2つ目の質問で、いくつかモジュールが足りないと言われたので一旦Ctrl+C で抜けて、足りないモジュールをインストールする。
 
-[code]
+```sh
 # yum install httpd-devel openssl openssl-devel apr-devel
 Installed:
   apr-devel.i386 0:1.2.7-11.el5_5.3          apr-devel.x86_64 0:1.2.7-11.el5_5.3
@@ -52,28 +52,28 @@ Dependency Installed:
   expat-devel.x86_64 0:1.95.8-8.3.el5_5.3    keyutils-libs-devel.x86_64 0:1.2-1.el5
   krb5-devel.x86_64 0:1.6.1-36.el5_5.5       libselinux-devel.x86_64 0:1.33.4-5.5.el5
   libsepol-devel.x86_64 0:1.15.2-3.el5       openldap-devel.x86_64 0:2.3.43-12.el5_5.2
-[/code]
+```
 
 もう一度インストールを試みる
-[code]
+```sh
 # passenger-install-apache2-module
 * Curl development headers with SSL support... not found
 * OpenSSL support for Ruby... not found
-[/code]
+```
 
 
 まだエラーが二つ。
 "OpenSSL support for Ruby" に関しては、zlibと同様に Ruby の持つ SSL サポートモジュールをコンパイルすることで解決できるようです。
 
-[code]
+```sh
 # cd ./ruby-1.8.7-p249/ext/openssl/
 # ruby extconf.rb
 # make
 # make install
-[/code]
+```
 
 Curl-devel もインストールする。
-[code]
+```sh
 # yum install curl-devel
 
 Running Transaction
@@ -90,11 +90,11 @@ Dependency Installed:
   curl.i386 0:7.15.5-9.el5   libidn.i386 0:0.6.5-1.1   libidn-devel.x86_64 0:0.6.5-1.1
 
 Complete!
-[/code]
+```
 
 
 3度目の正直を試す。
-[code]
+```sh
 # passenger-install-apache2-module
 
 The Apache 2 module was successfully installed.
@@ -110,19 +110,19 @@ applications on Apache, without any further Ruby on Rails-specific
 configuration!
 
 Press ENTER to continue.
-[/code]
+```
 
 不足モジュールがすべて解決済みならインストールが継続される。
 すると以下のようなメッセージが表示される。下記の部分は Passenger の動作設定となるので、必ずメモを取ること。
 記述は動作環境によって異なります。
-[code]
+```sh
    LoadModule passenger_module /usr/local/lib/ruby/gems/1.8/gems/passenger-3.0.0/ext/apache2/mod_passenger.so
    PassengerRoot /usr/local/lib/ruby/gems/1.8/gems/passenger-3.0.0
    PassengerRuby /usr/local/bin/ruby
-[/code]
+```
 
 メモったらEnterキーを押す。次に、ドキュメントルールに関する設定が出るので、これもメモる。
-[code]
+```sh
 Deploying a Ruby on Rails application: an example
 
 Suppose you have a Rails application in /somewhere. Add a virtual host to your
@@ -146,24 +146,24 @@ Enjoy Phusion Passenger, a product of Phusion (www.phusion.nl) :-)
 http://www.modrails.com/
 
 Phusion Passenger is a trademark of Hongli Lai & Ninh Bui.
-[/code]
+```
 
 passengerのインストールはこれで完了。
 次にさきほどのメモをapacheに反映させる。
-[code]
+```sh
 # vi /etc/httpd/conf/httpd.conf
 
 LoadModule passenger_module /usr/local/lib/ruby/gems/1.8/gems/passenger-3.0.0/ext/apache2/mod_passenger.so
 PassengerRoot /usr/local/lib/ruby/gems/1.8/gems/passenger-3.0.0
 PassengerRuby /usr/local/bin/ruby
-[/code]
+```
 
 apacheの再起動を行う。
-[code]
+```sh
 # /etc/rc.d/init.d/httpd restart
 Stopping httpd:                                            [  OK  ]
 Starting httpd:                                            [  OK  ]
-[/code]
+```
 
 これで無事完了なりー。
 

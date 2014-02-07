@@ -25,14 +25,14 @@ jsdoitに投稿したものなのでちょい古いですけど紹介します�
 さて、ソースコードの紹介になります。
 
 ### 【1】描画するHTML側でステージ的なものを用意します。
-[html]
+```html
 <ul class="group tstList">
     <li id="stage">
 
-[/html]
+```
 
 ### 【2】CSSで見た目を制御します。
-[css]
+```css
 * {
 	margin: 0;
     	padding: 0;
@@ -65,10 +65,10 @@ jsdoitに投稿したものなのでちょい古いですけど紹介します�
 	float: left;
     	list-style: none;
 }
-[/css]
+```
 
 ### 【3】描画データを二次元配列で用意します。値にはHexカラー値を文字列でもちます。
-[javascript]
+```js
 /*-------------------------------------------------
 * map
 */
@@ -90,10 +90,10 @@ var map = [
 	['ffffff','05299d','05299d','05299d','fb8a10','fb8a10','fb8a10','fb8a10','fb8a10','fb8a10','fb8a10','ffffff','ffffff','ffffff','ffffff','ffffff'],
 	['ffffff','05299d','ffffff','ffffff','fb8a10','fb8a10','fb8a10','fb8a10','ffffff','ffffff','ffffff','ffffff','ffffff','ffffff','ffffff','ffffff']
 ]
-[/javascript]
+```
 
 ### 【4】描画ロジックをJavaScriptで実装します。
-[javascript]
+```js
 /*-------------------------------------------------
 * module
 */
@@ -160,7 +160,7 @@ var init = function(){
     new Create( $('stage') );
 }
 window.addEventListener('load', init, false);
-[/javascript]
+```
 
 JavaScriptはライブラリは使っていません、ネイティブ実装です。
 jQueryとか使えばもっと簡単に実装できると思います。

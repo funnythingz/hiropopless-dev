@@ -9,7 +9,7 @@ tags: []
 keywords:
 - JavaScript
 ---
-[javascript]
+```js
 // 全て選択押下処理
 function AllChackInput(objAll){
 
@@ -48,9 +48,9 @@ function AllChackOnOut(objMbr){
 	document.AllCheck.chk99.checked = true;
 
 }
-[/javascript]
+```
 
-[html]
+```html
 <div>
 <form name="AllCheck">
 <input type="checkbox" name="chk99" onclick="AllChackInput(this)" />全選択・解除<br />
@@ -60,7 +60,7 @@ function AllChackOnOut(objMbr){
 <input type="checkbox" onclick="AllChackOnOut(this)" />チェック1
 </form>
 </div>
-[/html]
+```
 
 ---
 ※この記事は WordPress に投稿した記事を変換したものです。一部不自然な表示があるかも知れません。ご了承ください。また、記事タイトル先頭の * は WordPress から移行した記事である印です。

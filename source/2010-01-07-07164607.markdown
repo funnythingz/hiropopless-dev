@@ -13,7 +13,7 @@ keywords:
 ---
 flashplayerの有無判別は非常にややこしい・・・。どこかのサイトにあったものをコピペではっておく。
 
-[javascript]
+```js
 function FlashPlayerVer(){
 	//初期設定
 	var flashplayer_ver = 0;
@@ -35,7 +35,7 @@ function FlashPlayerVer(){
 	if(flashplayer_ver <= 6){flashplayer_ver = 0;}
 	return flashplayer_ver;
 }
-[/javascript]
+```
 
 FlashPlayerVer() を実行したときに 0 が返ってきたら入っていないということに。
 他にもいろいろJSあるけど、これシンプルで結構好き。

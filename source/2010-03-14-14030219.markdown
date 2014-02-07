@@ -26,7 +26,7 @@ keywords:
 
 とりあえず、Rubyでtwitterに投稿できるrubygemsのインストールの仕方です。
 
-[code]
+```sh
 rdocのインストール
 # yum install rdoc
 
@@ -44,11 +44,11 @@ Successfully installed twitter-0.8.4
 1 gem installed
 Installing ri documentation for twitter-0.8.4...
 Installing RDoc documentation for twitter-0.8.4...
-[/code]
+```
 
 こんな感じでサーバーにインストール。そしてRubyの書き方は下記の通り。
 
-[ruby]
+```ruby
 #------------------------------------------------------------
 # ./twit.rb
 def twit( v )
@@ -71,13 +71,13 @@ def twit( v )
 end
 
 twit( 'てすつ投稿やねん' )
-[/ruby]
+```
 
 コマンドラインでプログラムを実行する。
 
-[code]
+```sh
 host~% ruby ./twit.rb
-[/code]
+```
 
 
 これでRubyからtwitterに投稿できちゃう！Ruby、簡単だよ、Ruby。

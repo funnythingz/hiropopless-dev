@@ -17,25 +17,25 @@ keywords:
 まず、型ってものをつくります。
 Javaでいうところのクラス的なものです。JavaScriptはClassというものが存在しないので、functionで定義します。
 
-[javascript]
+```js
 var ObjectA = function(){
 	this._var;
 	this._method = function(arg){
 		return arg;
 	}
 }
-[/javascript]
+```
 
 1行目が型の定義になっています。functionになっていれば書き方は自由でおｋじゃないかと。
 そして、このObjectAがもっている子要素オブジェクト（JSはすべてがオブジェクトとして扱う）は、型のない"_var"プロパティと、引数を返すだけの"_method"メソッドが定義されています。ObjectAの子要素として定義するため、"this"を使って定義しています。この"this"はObjectA自身への参照となります。
 
 そして、この型はまだ実体化していないため、実体化して、実際に使える状態にします。
 
-[javascript]
+```js
 var objectA = new ObjectA();
 objectA._var = 'hello world';
 alert( objectA._method( objectA._var ) );
-[/javascript]
+```
 
 1行目で ObjectAをnewしてobjectAとして実体化します。設計図から実際に実体を作った状態です。
 2行目では、_varプロパティにString型の"hello world" を代入しています。
