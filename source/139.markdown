@@ -13,7 +13,7 @@ keywords:
 ---
 ActionScript3を入門してみた。
 
-[as]
+```as3
 /*******************************
  *
  *  Hello world ActionScript
@@ -56,7 +56,7 @@ funnyCorp.traceName();
  *  実行しても同じ結果として、&quot;funnythingz&quot; が出力される。
  */
 Corp.traceName();
-[/as]
+```
 
 
 
