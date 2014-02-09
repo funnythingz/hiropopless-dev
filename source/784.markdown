@@ -38,10 +38,10 @@ fluxflex
 [http://www.fluxflex.com/](http://www.fluxflex.com/ "http://www.fluxflex.com/")
 
 アカウントを取得したらログインして、新規プロジェクトをつくります。
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/10/834f11a22b2d440ff64c0161c479a7cf.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/10/834f11a22b2d440ff64c0161c479a7cf.png" alt="" title="スクリーンショット 2011-10-15 0.17.00" width="353" height="185" class="alignnone size-full wp-image-786" /></a>
+<a href="/imgs/archives/2011/10/834f11a22b2d440ff64c0161c479a7cf.png"><img src="/imgs/archives/2011/10/834f11a22b2d440ff64c0161c479a7cf.png" alt="" title="スクリーンショット 2011-10-15 0.17.00" width="353" height="185" class="alignnone size-full wp-image-786" /></a>
 
 プロジェクトを作ったら以下の手順でRedmineをポチッとインストールします。
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/10/ab50a1a79ad25516bf49b3d9dcd037f11.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/10/ab50a1a79ad25516bf49b3d9dcd037f11.png" alt="" title="スクリーンショット 2011-10-15 0.22.06" style="width: 700px;" /></a>
+<a href="/imgs/archives/2011/10/ab50a1a79ad25516bf49b3d9dcd037f11.png"><img src="/imgs/archives/2011/10/ab50a1a79ad25516bf49b3d9dcd037f11.png" alt="" title="スクリーンショット 2011-10-15 0.22.06" style="width: 700px;" /></a>
 
 インストール完了のダイアログが出たら、ブラウザでプロジェクトのURLにアクセスして確認します。Redmineが正常にインストールされていたら、とりあえずRedmineのパスワードだけは変更しちゃいましょう。
 

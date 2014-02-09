@@ -35,7 +35,7 @@ keywords:
 <script src="https://gist.github.com/funnythingz/5889527.js"></script>
 
 <p>vimでhoge.coffeeを開いてCoffeeScriptを書いたらCtrl+Cで右側にコンパイルされたJSのプレビューが表示されます。</p>
-<a href="http://hiropo.co.uk/wp-content/uploads/2013/06/4dc99b061cc67594868072a17dfb57d5.png"><img src="http://hiropo.co.uk/wp-content/uploads/2013/06/4dc99b061cc67594868072a17dfb57d5.png" alt="hoge.coffee____tmp_coffee__-_VIM_—_vim_—_102×38" class="alignnone size-full wp-image-946" /></a>
+<a href="/imgs/archives/2013/06/4dc99b061cc67594868072a17dfb57d5.png"><img src="/imgs/archives/2013/06/4dc99b061cc67594868072a17dfb57d5.png" alt="hoge.coffee____tmp_coffee__-_VIM_—_vim_—_102×38" class="alignnone size-full wp-image-946" /></a>
 
 ---
 ※この記事は WordPress に投稿した記事を変換したものです。一部不自然な表示があるかも知れません。ご了承ください。また、記事タイトル先頭の * は WordPress から移行した記事である印です。

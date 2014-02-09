@@ -11,7 +11,7 @@ keywords:
 ---
 ブログを更新しようと管理画面にログインしてみたら、
 
-<a href="http://hiropo.co.uk/wp-content/uploads/2010/04/po.gif"><img src="http://hiropo.co.uk/wp-content/uploads/2010/04/po.gif" alt="" title="po" width="652" height="384" class="alignnone size-full wp-image-445" /></a>
+<a href="/imgs/archives/2010/04/po.gif"><img src="/imgs/archives/2010/04/po.gif" alt="" title="po" width="652" height="384" class="alignnone size-full wp-image-445" /></a>
 
 「<span style="text-decoration: underline">でも</span>今のところ スパム はありません。」
 

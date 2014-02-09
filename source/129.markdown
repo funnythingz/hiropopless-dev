@@ -19,7 +19,7 @@ wordpress大好きな僕としては、個人的にMovableTypeとかアンチだ
 
 そこで、専門学校の時につくったサイトをMTに組み込んで再構築してみました。
 
-<p style="text-align: center;"><a href="http://www.makingmachinez.com/"><img src="http://hiropo.co.uk/wp-content/uploads/2009/02/makingmachinez-198x300.jpg" alt="" title="makingmachinez" width="198" height="300" class="alignnone size-medium wp-image-130" /></a></p>
+<p style="text-align: center;"><a href="http://www.makingmachinez.com/"><img src="/imgs/archives/2009/02/makingmachinez-198x300.jpg" alt="" title="makingmachinez" width="198" height="300" class="alignnone size-medium wp-image-130" /></a></p>
 
 当時、「原付改造日記」というものをフルスクラッチで作っていました。
 （その頃、ブログはまだ一般的でなかったのです。）

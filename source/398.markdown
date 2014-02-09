@@ -24,35 +24,35 @@ USBメモリは1,000円前後で購入できます。
 <iframe src="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=funnythingz-22&o=9&p=8&l=as1&m=amazon&f=ifr&asins=B0014B3SK8" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 
 そして、BackTrack4 final をダウンロードします。
-<img src="http://hiropo.co.uk/wp-content/uploads/2010/02/dl.gif" alt="dl" title="dl" width="398" height="244" class="alignnone size-full wp-image-400" />
+<img src="/imgs/archives/2010/02/dl.gif" alt="dl" title="dl" width="398" height="244" class="alignnone size-full wp-image-400" />
 →[BackTrackダウンロードURL](http://www.backtrack-linux.org/downloads/ "BackTrackダウンロードURL")
 
 ダウンロードが完了したら、USBメモリをWindowsマシンに差してください。
 次に、LinuxLive USB Creator というツールを使って藤丸のUSBメモリを作っていきます。
 
 LinuxLive USB Creator をダウンロードします。
-<img src="http://hiropo.co.uk/wp-content/uploads/2010/02/click.gif" alt="click" title="click" width="314" height="201" class="alignnone size-full wp-image-401" />
+<img src="/imgs/archives/2010/02/click.gif" alt="click" title="click" width="314" height="201" class="alignnone size-full wp-image-401" />
 
 →[LinuxLive USB CreatorダウンロードURL](http://www.linuxliveusb.com/ "LinuxLive USB CreatorダウンロードURL")
 
 ダウンロードしたら、LinuxLive USB Creator 2.4.exe を実行して解凍します。
-<img src="http://hiropo.co.uk/wp-content/uploads/2010/02/icon.gif" alt="icon" title="icon" width="130" height="239" class="alignnone size-full wp-image-402" />
+<img src="/imgs/archives/2010/02/icon.gif" alt="icon" title="icon" width="130" height="239" class="alignnone size-full wp-image-402" />
 
 解凍してできたフォルダに入ります。
-<img src="http://hiropo.co.uk/wp-content/uploads/2010/02/dir.gif" alt="dir" title="dir" width="652" height="504" class="alignnone size-full wp-image-403" />
+<img src="/imgs/archives/2010/02/dir.gif" alt="dir" title="dir" width="652" height="504" class="alignnone size-full wp-image-403" />
 
 LiLi USB Creator.exe を実行します。
-<img src="http://hiropo.co.uk/wp-content/uploads/2010/02/tool.gif" alt="tool" title="tool" width="450" height="750" class="alignnone size-full wp-image-404" />
+<img src="/imgs/archives/2010/02/tool.gif" alt="tool" title="tool" width="450" height="750" class="alignnone size-full wp-image-404" />
 
 あとは、インストール先のUSBメモリとダウンロードしたBackTrack4 final のisoを選択して、インストールを実行します。
 インストールが完了すると、下記のようなメッセージが出てきます。
-<img src="http://hiropo.co.uk/wp-content/uploads/2010/02/comp.gif" alt="comp" title="comp" width="386" height="121" class="alignnone size-full wp-image-405" />
+<img src="/imgs/archives/2010/02/comp.gif" alt="comp" title="comp" width="386" height="121" class="alignnone size-full wp-image-405" />
 
 これでインストール完了です。とっても簡単！
 
 さて、次は起動するPCのBIOSをUSBメモリをファーストブートに設定して、起動してみてください。
 下記は僕のネットブックでの起動画面です。
-<img src="http://hiropo.co.uk/wp-content/uploads/2010/02/37e3808047553cedb34daa9b1d7ab2a3.gif" alt="写真" title="写真" width="300" height="400" class="alignnone size-full wp-image-406" />
+<img src="/imgs/archives/2010/02/37e3808047553cedb34daa9b1d7ab2a3.gif" alt="写真" title="写真" width="300" height="400" class="alignnone size-full wp-image-406" />
 
 こんな感じで出来上がりです。
 

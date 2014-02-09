@@ -50,7 +50,7 @@ void draw(){
 
 
 ### rect版モザイク
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/11/ca49c20ec8023714493c1e9be7a17703.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/11/ca49c20ec8023714493c1e9be7a17703.png" alt="" title="スクリーンショット 2011-11-29 23.27.21" width="420" height="321" class="alignnone size-full wp-image-853" /></a>
+<a href="/imgs/archives/2011/11/ca49c20ec8023714493c1e9be7a17703.png"><img src="/imgs/archives/2011/11/ca49c20ec8023714493c1e9be7a17703.png" alt="" title="スクリーンショット 2011-11-29 23.27.21" width="420" height="321" class="alignnone size-full wp-image-853" /></a>
 [java]
 import processing.video.*;
  
@@ -84,7 +84,7 @@ void mosaic(int w, int h){
 
 
 ### ellipse版モザイク
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/11/f68ac3e907b52df26b26a45fcb7db787.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/11/f68ac3e907b52df26b26a45fcb7db787.png" alt="" title="スクリーンショット 2011-11-30 0.58.54" width="419" height="322" class="alignnone size-full wp-image-855" /></a>
+<a href="/imgs/archives/2011/11/f68ac3e907b52df26b26a45fcb7db787.png"><img src="/imgs/archives/2011/11/f68ac3e907b52df26b26a45fcb7db787.png" alt="" title="スクリーンショット 2011-11-30 0.58.54" width="419" height="322" class="alignnone size-full wp-image-855" /></a>
 [java]
 import processing.video.*;
  
@@ -118,7 +118,7 @@ void fillMosaic(PImage img, int w, int h){
 
 
 ### 斬新な何か
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/11/6c3ad99e87ec9eb07ec8c82902354f8b.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/11/6c3ad99e87ec9eb07ec8c82902354f8b.png" alt="" title="スクリーンショット 2011-11-30 2.00.50" width="418" height="322" class="alignnone size-full wp-image-857" /></a>
+<a href="/imgs/archives/2011/11/6c3ad99e87ec9eb07ec8c82902354f8b.png"><img src="/imgs/archives/2011/11/6c3ad99e87ec9eb07ec8c82902354f8b.png" alt="" title="スクリーンショット 2011-11-30 2.00.50" width="418" height="322" class="alignnone size-full wp-image-857" /></a>
 [java]
 import processing.video.*;
  

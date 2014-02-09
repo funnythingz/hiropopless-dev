@@ -9,7 +9,7 @@ tags: []
 keywords:
 - つれDUれ
 ---
-<img src="http://hiropo.co.uk/wp-content/uploads/2007/12/10024675168_s1.jpg" alt="スパム" />
+<img src="/imgs/archives/2007/12/10024675168_s1.jpg" alt="スパム" />
 
 昔、上記のようなサイトを企画してました。 
 

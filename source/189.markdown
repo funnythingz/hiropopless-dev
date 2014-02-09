@@ -11,13 +11,13 @@ keywords:
 ---
 mixiで面白いアド広告を見つけた。
 
-<div><a href="http://hiropo.co.uk/wp-content/uploads/2009/08/mixi_ad_0.jpg"><img src="http://hiropo.co.uk/wp-content/uploads/2009/08/mixi_ad_0-300x191.jpg" alt="" title="mixi_ad_0" width="300" height="191" class="alignnone size-medium wp-image-190" /></a></div>
+<div><a href="/imgs/archives/2009/08/mixi_ad_0.jpg"><img src="/imgs/archives/2009/08/mixi_ad_0-300x191.jpg" alt="" title="mixi_ad_0" width="300" height="191" class="alignnone size-medium wp-image-190" /></a></div>
 
 
 これ、3箇所の広告スペースがあるんだけど、その全部を使ってＦｌａｓｈを埋め込んでいる。
 で、この3箇所のスペースのＦｌａｓｈが連動して動いている。
 
-<div><a href="http://hiropo.co.uk/wp-content/uploads/2009/08/mixi_ad_1.jpg"><img src="http://hiropo.co.uk/wp-content/uploads/2009/08/mixi_ad_1-300x191.jpg" alt="" title="mixi_ad_1" width="300" height="191" class="alignnone size-medium wp-image-192" /></a></div>
+<div><a href="/imgs/archives/2009/08/mixi_ad_1.jpg"><img src="/imgs/archives/2009/08/mixi_ad_1-300x191.jpg" alt="" title="mixi_ad_1" width="300" height="191" class="alignnone size-medium wp-image-192" /></a></div>
 
 これはなかなか面白いなぁと思ったので書き留めてみた。
 

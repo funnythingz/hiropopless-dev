@@ -18,14 +18,14 @@ SekenではiPhone4やらiPadやら話題になりまくってるけど、どん�
 
 
 それがこちら↓ 
-<a href="http://hiropo.co.uk/wp-content/uploads/2010/07/IMG_02502.jpg"><img src="http://hiropo.co.uk/wp-content/uploads/2010/07/IMG_02502-225x300.jpg" alt="" title="IMG_0250" width="225" height="300" class="size-medium wp-image-500" /></a>
+<a href="/imgs/archives/2010/07/IMG_02502.jpg"><img src="/imgs/archives/2010/07/IMG_02502-225x300.jpg" alt="" title="IMG_0250" width="225" height="300" class="size-medium wp-image-500" /></a>
 
 GuruPlug！電源内蔵のプラグコンピュータとして話題になったSheevaPlugの後継機！
 なんと無線LANも使えちゃうんだってばよ。 
 
-<div><a href="http://hiropo.co.uk/wp-content/uploads/2010/07/IMG_02521.jpg"><img src="http://hiropo.co.uk/wp-content/uploads/2010/07/IMG_02521-225x300.jpg" alt="" title="IMG_0252" width="225" height="300" class="size-medium wp-image-497" /></a></div>
+<div><a href="/imgs/archives/2010/07/IMG_02521.jpg"><img src="/imgs/archives/2010/07/IMG_02521-225x300.jpg" alt="" title="IMG_0252" width="225" height="300" class="size-medium wp-image-497" /></a></div>
 
-<div><a href="http://hiropo.co.uk/wp-content/uploads/2010/07/IMG_02541.jpg"><img src="http://hiropo.co.uk/wp-content/uploads/2010/07/IMG_02541-225x300.jpg" alt="" title="IMG_0254" width="225" height="300" class="size-medium wp-image-498" /></a></div>
+<div><a href="/imgs/archives/2010/07/IMG_02541.jpg"><img src="/imgs/archives/2010/07/IMG_02541-225x300.jpg" alt="" title="IMG_0254" width="225" height="300" class="size-medium wp-image-498" /></a></div>
 
 形はACアダプタと同じ形だけど重さはタバコ2箱分くらいの重さでむちゃくちゃ軽い。
 これがパソコンだなんて全然見えないんす。

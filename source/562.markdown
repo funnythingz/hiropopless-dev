@@ -490,7 +490,7 @@ $ rails server
 
 
 http://localhost:3000/ にアクセス。
-<a href="http://hiropo.co.uk/wp-content/uploads/2010/11/rails.gif"><img src="http://hiropo.co.uk/wp-content/uploads/2010/11/rails-300x230.gif" alt="" title="rails" width="300" height="230" class="alignnone size-medium wp-image-563" /></a>
+<a href="/imgs/archives/2010/11/rails.gif"><img src="/imgs/archives/2010/11/rails-300x230.gif" alt="" title="rails" width="300" height="230" class="alignnone size-medium wp-image-563" /></a>
 
 やったー！うごいたー！
 

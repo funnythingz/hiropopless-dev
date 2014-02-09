@@ -15,7 +15,7 @@ keywords:
 前回はellipse() を使って図形を描いてみましたが、今回はもうちょっとオブジェクト指向っぽく描いてみました。
 
 とりま、某有名なネズミさんに似た形をellipse()使って描いてみました。
-<a href="http://hiropo.co.uk/wp-content/uploads/2010/10/mickey1.jpg"><img src="http://hiropo.co.uk/wp-content/uploads/2010/10/mickey1.jpg" alt="" title="mickey1" width="406" height="432" class="alignnone size-full wp-image-538" /></a>
+<a href="/imgs/archives/2010/10/mickey1.jpg"><img src="/imgs/archives/2010/10/mickey1.jpg" alt="" title="mickey1" width="406" height="432" class="alignnone size-full wp-image-538" /></a>
 
 [java]
 float positionX = 125;
@@ -69,7 +69,7 @@ class Mouse{
 [/java]
 
 実際にこのMouseクラスを使ってテキトーに並べてみました。
-<a href="http://hiropo.co.uk/wp-content/uploads/2010/10/mickey3.jpg"><img src="http://hiropo.co.uk/wp-content/uploads/2010/10/mickey3.jpg" alt="" title="mickey3" width="406" height="432" class="alignnone size-full wp-image-545" /></a>
+<a href="/imgs/archives/2010/10/mickey3.jpg"><img src="/imgs/archives/2010/10/mickey3.jpg" alt="" title="mickey3" width="406" height="432" class="alignnone size-full wp-image-545" /></a>
 
 [java]
 float positionX = 125;
