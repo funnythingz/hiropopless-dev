@@ -140,7 +140,7 @@ OpenFrameworks/apps/examples/ofxKinect
 
 中にあるXcodeのプロジェクトファイル ofxKinect.xcodeproj を開いて buildしてみる。
 
-<a href="http://hiropo.co.uk/wp-content/uploads/2010/11/02c2a9a6a154bae8a909aed7a19dc2af.png"><img src="http://hiropo.co.uk/wp-content/uploads/2010/11/02c2a9a6a154bae8a909aed7a19dc2af-1024x742.png" alt="" title="スクリーンショット（2010-11-24 1.18.58）" width="640" height="463" class="alignnone size-large wp-image-577" /></a>
+<a href="/imgs/archives/2010/11/02c2a9a6a154bae8a909aed7a19dc2af.png"><img src="/imgs/archives/2010/11/02c2a9a6a154bae8a909aed7a19dc2af-1024x742.png" alt="" title="スクリーンショット（2010-11-24 1.18.58）" width="640" height="463" class="alignnone size-large wp-image-577" /></a>
 
 
 これでとりあえず動いたお！

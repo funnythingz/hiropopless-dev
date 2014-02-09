@@ -15,12 +15,12 @@ keywords:
 - CSS
 - 気になっちゃう
 ---
-<a href="http://hiropo.co.uk/wp-content/uploads/2008/12/a.jpg"><img class="alignnone size-medium wp-image-56" title="びふぉあ" src="http://hiropo.co.uk/wp-content/uploads/2008/12/a-300x196.jpg" alt="" width="300" height="196" /></a>
+<a href="/imgs/archives/2008/12/a.jpg"><img class="alignnone size-medium wp-image-56" title="びふぉあ" src="/imgs/archives/2008/12/a-300x196.jpg" alt="" width="300" height="196" /></a>
 
 ↑の画像の「チャンネル登録」をクリックすると・・・、
 
 
-<a href="http://hiropo.co.uk/wp-content/uploads/2008/12/e784a1e9a18c.jpg"><img class="alignnone size-medium wp-image-57" title="あふたぁ" src="http://hiropo.co.uk/wp-content/uploads/2008/12/e784a1e9a18c-300x241.jpg" alt="" width="300" height="241" /></a>
+<a href="/imgs/archives/2008/12/e784a1e9a18c.jpg"><img class="alignnone size-medium wp-image-57" title="あふたぁ" src="/imgs/archives/2008/12/e784a1e9a18c-300x241.jpg" alt="" width="300" height="241" /></a>
 
 はい崩れた！今クリックしたら崩れたよ！！
 

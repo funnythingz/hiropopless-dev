@@ -39,19 +39,19 @@ Titanium はiPhone, Android でクロスデバイス開発をするための開�
 [http://www.appcelerator.com/](http://www.appcelerator.com/ "http://www.appcelerator.com/")
 
 ### Titanium Studio を起動し、プロジェクトを新規でつくる
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/09/754de3cf2d164ca350e6ca3eea66196c1.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/09/754de3cf2d164ca350e6ca3eea66196c1.png" alt="" title="CreateProject" width="228" height="125" class="alignnone size-full wp-image-696" /></a>
+<a href="/imgs/archives/2011/09/754de3cf2d164ca350e6ca3eea66196c1.png"><img src="/imgs/archives/2011/09/754de3cf2d164ca350e6ca3eea66196c1.png" alt="" title="CreateProject" width="228" height="125" class="alignnone size-full wp-image-696" /></a>
 
 ### Titanium Desctop Project をつくる
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/09/65da3bfd87ed0a14e1c66afa31b6fa45.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/09/65da3bfd87ed0a14e1c66afa31b6fa45.png" alt="" title="Titanium Desctop Project" width="527" height="504" class="alignnone size-full wp-image-698" /></a>
+<a href="/imgs/archives/2011/09/65da3bfd87ed0a14e1c66afa31b6fa45.png"><img src="/imgs/archives/2011/09/65da3bfd87ed0a14e1c66afa31b6fa45.png" alt="" title="Titanium Desctop Project" width="527" height="504" class="alignnone size-full wp-image-698" /></a>
 
 ### Project Name を設定し、使用言語にRuby, Python, PHP をチェック
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/09/583944337d08aed0c389ad1165e279fb.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/09/583944337d08aed0c389ad1165e279fb.png" alt="" title="Use Language" width="532" height="501" class="alignnone size-full wp-image-699" /></a>
+<a href="/imgs/archives/2011/09/583944337d08aed0c389ad1165e279fb.png"><img src="/imgs/archives/2011/09/583944337d08aed0c389ad1165e279fb.png" alt="" title="Use Language" width="532" height="501" class="alignnone size-full wp-image-699" /></a>
 
 ### アプリケーション情報を設定する
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/09/b36f7164a016a593dde3baed5a14b240.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/09/b36f7164a016a593dde3baed5a14b240.png" alt="" title="Config" width="408" height="475" class="alignnone size-full wp-image-703" /></a>
+<a href="/imgs/archives/2011/09/b36f7164a016a593dde3baed5a14b240.png"><img src="/imgs/archives/2011/09/b36f7164a016a593dde3baed5a14b240.png" alt="" title="Config" width="408" height="475" class="alignnone size-full wp-image-703" /></a>
 
 ### ソースコードを書くために /Resources/index.html を開く
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/09/3ca357de7e930f7da506a4b426695a86.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/09/3ca357de7e930f7da506a4b426695a86.png" alt="" title="source" width="240" height="213" class="alignnone size-full wp-image-701" /></a>
+<a href="/imgs/archives/2011/09/3ca357de7e930f7da506a4b426695a86.png"><img src="/imgs/archives/2011/09/3ca357de7e930f7da506a4b426695a86.png" alt="" title="source" width="240" height="213" class="alignnone size-full wp-image-701" /></a>
 
 ### ソースコードを書く
 ```html
@@ -84,9 +84,9 @@ Titanium はiPhone, Android でクロスデバイス開発をするための開�
 ```
 
 ### アプリを実行してみる
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/09/23951a9f864ad6d1ade13d6f72a46dea.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/09/23951a9f864ad6d1ade13d6f72a46dea.png" alt="" title="実行" width="331" height="173" class="alignnone size-full wp-image-706" /></a>
+<a href="/imgs/archives/2011/09/23951a9f864ad6d1ade13d6f72a46dea.png"><img src="/imgs/archives/2011/09/23951a9f864ad6d1ade13d6f72a46dea.png" alt="" title="実行" width="331" height="173" class="alignnone size-full wp-image-706" /></a>
 
-<a href="http://hiropo.co.uk/wp-content/uploads/2011/09/9fa470a3d698a9d2c2414894676ee9af.png"><img src="http://hiropo.co.uk/wp-content/uploads/2011/09/9fa470a3d698a9d2c2414894676ee9af.png" alt="" title="アプリ起動" width="717" height="507" class="alignnone size-full wp-image-707" /></a>
+<a href="/imgs/archives/2011/09/9fa470a3d698a9d2c2414894676ee9af.png"><img src="/imgs/archives/2011/09/9fa470a3d698a9d2c2414894676ee9af.png" alt="" title="アプリ起動" width="717" height="507" class="alignnone size-full wp-image-707" /></a>
 
 デスクトップアプリができちゃった！
 

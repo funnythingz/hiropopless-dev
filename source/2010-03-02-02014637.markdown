@@ -13,7 +13,7 @@ keywords:
 ---
 デジタルフォトフレームに美人時計をいれてみた。
 
-<a href="http://hiropo.co.uk/wp-content/uploads/2010/03/IMG_3448.jpg"><img src="http://hiropo.co.uk/wp-content/uploads/2010/03/IMG_3448.jpg" alt="" title="IMG_3448" width="640" height="426" class="alignnone size-full wp-image-426" /></a>
+<a href="/imgs/archives/2010/03/IMG_3448.jpg"><img src="/imgs/archives/2010/03/IMG_3448.jpg" alt="" title="IMG_3448" width="640" height="426" class="alignnone size-full wp-image-426" /></a>
 
 スライドショーで、1分置きに画像を切り替えるようにしてみたので、スタートを現在の時間にすることによって、美人時計のデジタルフォトフレーム版が完成！もちろん1440枚全部入ってますよ！
 

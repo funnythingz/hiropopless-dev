@@ -13,7 +13,7 @@ keywords:
 けっこうよく使ったりするので、メモっとく。いつもソースを残しておかないからゼロから作り直すのめんどくさい。
 
 ▽完成イメージ（ソースコピペで動作確認してください。）
-<img src="http://hiropo.co.uk/wp-content/uploads/2009/12/kurukuru.gif" alt="kurukuru" title="kurukuru" width="411" height="343" class="alignnone size-full wp-image-340" />
+<img src="/imgs/archives/2009/12/kurukuru.gif" alt="kurukuru" title="kurukuru" width="411" height="343" class="alignnone size-full wp-image-340" />
 
 HTMLはこんな感じ。displayの、noneとblockを切り替えるだけ。
 ```html
