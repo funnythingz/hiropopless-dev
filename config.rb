@@ -113,3 +113,16 @@ activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = 'gh-pages'
 end
+
+##
+# Markdown
+###
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
+###
+# Code highlighting
+###
+
+activate :rouge_syntax
